@@ -1,14 +1,10 @@
 import React from "react";
 import "./App.css";
+// import { Router } from "@reach/router";
+import NavBar from "./Components/NavBar";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>Welcome to Recipes</p>
-      </header>
-    </div>
-  );
+  return <NavBar />;
 }
 
 export default App;

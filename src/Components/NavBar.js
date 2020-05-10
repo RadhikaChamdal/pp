@@ -1,26 +1,27 @@
-import React from 'react';
-import { Link } from '@reach/router';
-
+import React from "react";
+import { Link } from "@reach/router";
+import styles from "../Components/NavBar.module.css";
 
 function NavBar() {
-    return (
-        <div>
-            <Link to="/"> <li> <b>  Home </b> </li> </Link>
-            
-            <Link to="About"> <li> <b>  About </b> </li> </Link>
-            <Link to="Recipes"> <li> <b> Recipes </b> </li> </Link>
-            <Link to="List"> <li> <b>  Make your list </b> </li> </Link>
+  return (
+    <div className={styles.nav}>
+      <ul className={styles.navlinks}>
+        <b className={styles.header}>RecipeMe </b>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <li>Home</li>
+        </Link>
 
-        </div>
-    )
+        <Link to="About" style={{ textDecoration: "none" }}>
+          <li>About</li>
+        </Link>
+        <Link to="Recipes" style={{ textDecoration: "none" }}>
+          <li>Recipes</li>
+        </Link>
+        <Link to="Build" style={{ textDecoration: "none" }}>
+          <li>Build</li>
+        </Link>
+      </ul>
+    </div>
+  );
 }
-export default NavBar 
-
-
-
-
-
-        </div>
-    )
-}
-
+export default NavBar;
